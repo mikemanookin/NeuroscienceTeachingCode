@@ -200,9 +200,10 @@ p120 = y(x == 120)
 % at 120, isn't particularly informative... This is where the cumulative
 % distribution function becomes useful.
 
-% To find the probability of someone having an IQ less than 120, we just
-% add up all of the probabilities from 0 to 119. 
-cumPr120 = sum(y(x < 120))
+% To find the probability of someone having an IQ less than 120, we need to
+% take the definite integral from [0,119]. This calculates the area under
+% the distribution (i.e., cumulative distribution function) from  0 to 119. 
+cumPr120 = sum(y(x <= 120))
 
 % That gives us a value of 0.90, meaning that 90% of the population has an
 % IQ less than 120. We could do the same thing and get the probability that
