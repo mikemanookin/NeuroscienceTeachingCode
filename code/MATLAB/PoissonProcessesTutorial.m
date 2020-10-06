@@ -269,8 +269,9 @@ plot(x, cumPrFun, 'r', 'LineWidth', 2);
 hold off;
 xlabel('IQ score'); ylabel('cumulative probability');
 
-% No big deal, right?! You're just adding up probabilities. Note: if you're
-% dealing with a Poisson distribution, the function is 'poisscdf'.
+% No big deal, right?! You're just taking the integral under the 
+% distribution. Note: if you're dealing with a Poisson distribution, the 
+% function is 'poisscdf'.
 
 %% Fitting a cumulative distribution function
 
